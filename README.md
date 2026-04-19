@@ -1,18 +1,18 @@
-# TemplateUG8_A_2026
+# UG8_A_2026 - Umbrella Secure Terminal
 
 Lengkapilah program daftar catatan sederhana ini agar memiliki fitur-fitur berikut:
 
 ## UI dan Alur Program
-- Aplikasi terdiri dari 2 UI yang berbeda, yaitu **Form Login** dan **Form Daftar Catatan**.
+- Aplikasi terdiri dari 2 UI yang berbeda, yaitu **Form Login** dan **Form Main**.
   ![Form Login](/img/LoginForm.png)    
   ![Form Utama](/img/MainForm.png)  
 
-- **Autentikasi Login:** Untuk dapat mengakses form daftar catatan, pengguna harus melakukan login terlebih dahulu menggunakan kredensial *hardcode* dengan username: **admin** dan password: **admin**.
+- **Autentikasi Login:** Untuk dapat mengakses form inventaris, pengguna harus melakukan login yang terhubung dan tervalidasi langsung melalui tabel `users` di database. Gunakan kredensial default dengan username: **leon** dan password: **123** (sebagai Leon S. Kennedy).
 
-- **Insert Data Catatan:** User harus menginputkan Judul dan Isi, kemudian menekan tombol simpan. Jika proses simpan berhasil, maka program akan menampilkan pesan *"Catatan Ditambahkan!"* dalam bentuk *dialog box*.  
+- **Insert Data Inventaris (Add):** User harus menginputkan *Item Name*, *Acquired Qty*, dan *Used Qty*, kemudian menekan tombol tambah. Sistem harus secara otomatis menghitung nilai **Total Stock** dengan rumus matematika: `Total Stock = Acquired - Used` sebelum menyimpannya. Jika proses simpan berhasil, data akan langsung diperbarui dan muncul di dalam tabel.
 
-- **Update Data Catatan:** Untuk mengubah data catatan, user terlebih dahulu memilih catatan yang ingin diubah dengan mengeklik salah satu item pada tabel catatan. Data catatan yang dipilih akan ditampilkan pada form input, sehingga user dapat melakukan perubahan. Tombol simpan digunakan untuk melakukan penyimpanan data terbaru ke sistem. Pesan *"Catatan Diperbarui!"* dalam bentuk *dialog box* akan ditampilkan jika data berhasil diperbarui.  
+- **Update Data Inventaris (Save/Edit):** Untuk memperbarui data item, user terlebih dahulu memilih item yang ingin diubah dengan mengeklik salah satu baris pada tabel inventaris. Data yang dipilih akan ditampilkan pada form input (khusus *Item Name* akan dinonaktifkan/tidak bisa diedit karena merupakan Primary Key). User dapat mengubah nilai *Acquired* dan *Used*. Tombol simpan/update digunakan untuk melakukan penyimpanan ke sistem. **PENTING:** Sistem harus menghitung ulang *Total Stock* (`Acquired - Used`) sesuai nilai yang baru.
 
-- **Delete Data Catatan:** Untuk menghapus data catatan, user terlebih dahulu memilih catatan yang ingin dihapus dengan mengeklik salah satu item pada tabel catatan. Data catatan yang dipilih akan ditampilkan pada form input, dan user dapat menekan tombol hapus untuk menghapus data dari sistem. Pesan *"Catatan Dihapus!"* dalam bentuk *dialog box* akan ditampilkan jika data berhasil dihapus.  
+- **Delete Data Inventaris:** Untuk menghapus data, user terlebih dahulu memilih item yang ingin dihapus dengan mengeklik salah satu baris pada tabel, lalu menekan tombol hapus. Disarankan untuk memunculkan pesan konfirmasi (*Confirmation Dialog Box*) sebelum menghapus. Jika disetujui, data akan dihapus secara permanen dari sistem database dan hilang dari tampilan tabel.
 
-- **Database:** Seluruh data catatan aplikasi harus disimpan di dalam **SQLite**.
+- **Database:** Seluruh data aplikasi (baik *users* maupun *inventory*) harus dikelola dan disimpan di dalam **SQLite** (`umbrella_inventory.db`).
