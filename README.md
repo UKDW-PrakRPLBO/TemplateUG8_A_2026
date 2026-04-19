@@ -4,8 +4,8 @@ Lengkapilah program daftar catatan sederhana ini agar memiliki fitur-fitur berik
 
 ## UI dan Alur Program
 - Aplikasi terdiri dari 2 UI yang berbeda, yaitu **Form Login** dan **Form Daftar Catatan**.
-  ![Form Login](/img/LoginForm.PNG)    
-  ![Form Utama](/img/MainForm.PNG)  
+  ![Form Login](/img/LoginForm.png)    
+  ![Form Utama](/img/MainForm.png)  
 
 - **Autentikasi Login:** Untuk dapat mengakses form daftar catatan, pengguna harus melakukan login terlebih dahulu menggunakan kredensial *hardcode* dengan username: **admin** dan password: **admin**.
 
