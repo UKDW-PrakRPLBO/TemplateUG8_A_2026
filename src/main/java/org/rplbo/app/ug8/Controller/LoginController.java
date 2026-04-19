@@ -13,24 +13,6 @@ public class LoginController {
 
     @FXML
     private void handleLogin(ActionEvent event) {
-        // TODO : Hapus Kode dibawah ini sebelum mengerjakan (Hanya Sebagai Contoh)
-        // ==============================================================================
-        String user = txtUsername.getText();
-        String pass = txtPassword.getText();
-
-        // Autentikasi Hardcoded (Tidak tersambung ke database)
-        if (user.equals("admin") && pass.equals("admin")) {
-            try {
-                // Berhasil: Pindah ke halaman Inventory
-                UmbrellaApp.switchScene("umbrella-view.fxml");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        } else {
-            lblStatus.setText("ACCESS DENIED: INVALID CREDENTIALS");
-        }
-        // ==============================================================================
-
         // ==============================================================================
         // TODO 1: PROSES AUTENTIKASI (LOGIN)
         // ==============================================================================
