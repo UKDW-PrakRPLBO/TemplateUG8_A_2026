@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rplbo.app.ug8.Controller.UmbrellaController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox alignment="CENTER_LEFT">
+        <Label text="UMBRELLA CORP - INVENTORY TERMINAL" />
+
+        <Region HBox.hgrow="ALWAYS" />
+
+        <Button text="TERMINATE SESSION" onAction="#handleLogout" />
+    </HBox>
+
+    <GridPane hgap="10" vgap="10">
+        <padding>
+            <Insets bottom="15" left="15" right="15" top="15"/>
+        </padding>
+
+        <Label text="ITEM NAME:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="txtItem" promptText="e.g., Green Herb" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="200"/>
+
+        <Label text="ACQUIRED QTY:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="txtAcquired" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="200"/>
+    </GridPane>
+
+    <HBox spacing="10">
+        <Button text="AUTHORIZE &amp; ADD ITEM" onAction="#handleAdd" />
+        <Button text="UPDATE SECURE DATA" onAction="#handleSave" />
+        <Button text="DELETE ITEM" onAction="#handleDelete"
+                style="-fx-background-color: #444; -fx-text-fill: #ff3333; -fx-border-color: #ff3333;" />
+    </HBox>
+
+
+    <TableView fx:id="tableInventory" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colName" text="ITEM NAME" prefWidth="200"/>
+            <TableColumn fx:id="colAcquired" text="ACQUIRED" prefWidth="100" />
+            <TableColumn fx:id="colUsed" text="USED" prefWidth="100" />
+            <TableColumn fx:id="colStock" text="TOTAL STOCK" prefWidth="120" />
+        </columns>
+    </TableView>
+</VBox>
