@@ -27,3 +27,11 @@ Lengkapilah program daftar catatan sederhana ini agar memiliki fitur-fitur berik
 - - [ ] `handleAdd()` : Melengkapi logika untuk mengambil inputan form, menghitung stok otomatis, dan menyimpan data baru ke *database*.
 - - [ ] `handleSave()` : Melengkapi logika untuk memperbarui (*update*) data item yang dipilih dan menghitung ulang stok terbarunya.
 - - [ ] `handleDelete()` : Melengkapi logika penghapusan data dari sistem beserta tampilan konfirmasinya.
+
+### Komponen Penilaian (Total: 100 Poin)
+- **Fitur Login (15 Poin)**
+- **Tampil Data / Read (10 Poin)**
+- **Binding & Listener Tabel (15 Poin)**
+- **Tambah Data / Create (20 Poin)**
+- **Update Data (25 Poin)**
+- **Hapus Data / Delete (15 Poin)**
