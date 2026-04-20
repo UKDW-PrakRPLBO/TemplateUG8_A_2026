@@ -23,6 +23,7 @@ Lengkapilah program daftar catatan sederhana ini agar memiliki fitur-fitur berik
 - [ ] `handleLogin()` : Mengambil input *username* dan *password*, lalu memvalidasinya menggunakan *database manager* sebelum masuk ke sistem.
 
 **2. `UmbrellaController.java`**
+- - [ ] `initialize()` : Menghubungkan kolom tabel (`TableColumn`) dengan atribut model data, serta membuat *listener* agar data yang diklik pada tabel dapat muncul di *form* input teks.
 - [ ] `handleAdd()` : Melengkapi logika untuk mengambil inputan form, menghitung stok otomatis, dan menyimpan data baru ke *database*.
 - [ ] `handleSave()` : Melengkapi logika untuk memperbarui (*update*) data item yang dipilih dan menghitung ulang stok terbarunya.
 - [ ] `handleDelete()` : Melengkapi logika penghapusan data dari sistem beserta tampilan konfirmasinya.
