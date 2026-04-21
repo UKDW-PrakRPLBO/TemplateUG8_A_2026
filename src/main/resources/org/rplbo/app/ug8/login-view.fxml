@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.geometry.Insets?>
 
-<VBox alignment="CENTER" spacing="15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rplbo.app.ug8.Controller.LoginController">
-    <padding>
-        <Insets top="40" right="40" bottom="40" left="40"/>
-    </padding>
+<!--Buatlah Semirip mungkin, bebas asalkan jalan-->
 
-    <Label text="UMBRELLA SECURE TERMINAL" />
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.rplbo.app.ug8.Controller.LoginController"
+            prefHeight="400.0" prefWidth="600.0">
 
-    <VBox spacing="5" alignment="CENTER_LEFT" maxWidth="250">
-        <Label text="OPERATIVE ID:" />
-        <TextField fx:id="txtUsername" />
-    </VBox>
-
-    <VBox spacing="5" alignment="CENTER_LEFT" maxWidth="250">
-        <Label text="PASSCODE:" />
-        <PasswordField fx:id="txtPassword" />
-    </VBox>
-
-    <Button text="AUTHENTICATE" onAction="#handleLogin" prefWidth="250" />
-
-    <Label fx:id="lblStatus" />
-</VBox>
+</AnchorPane>
