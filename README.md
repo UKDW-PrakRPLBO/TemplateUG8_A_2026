@@ -17,16 +17,19 @@ Lengkapilah program daftar catatan sederhana ini agar memiliki fitur-fitur berik
 
 - **Database:** Seluruh data aplikasi (baik *users* maupun *inventory*) harus dikelola dan disimpan di dalam **SQLite** (`umbrella_inventory.db`).
 
-### Daftar Method yang Perlu Dilengkapi (TODO)
+### Daftar File & Method yang Perlu Dilengkapi (TODO)
 
-**1. `LoginController.java`**
-- - [ ] `handleLogin()` : Mengambil input *username* dan *password*, lalu memvalidasinya menggunakan *database manager* sebelum masuk ke sistem.
+**1. Desain Antarmuka (UI)**
+- [ ] `login-view.fxml` : Melengkapi komponen form login (seperti `TextField`, `PasswordField`, dan `Button`) beserta atribut `fx:id` dan `onAction`-nya. Buatlah tampilannya semirip mungkin dengan referensi, asalkan jalan dan terhubung dengan benar ke *Controller*.
 
-**2. `UmbrellaController.java`**
-- - [ ] `initialize()` : Menghubungkan kolom tabel (`TableColumn`) dengan atribut model data, serta membuat *listener* agar data yang diklik pada tabel dapat muncul di *form* input teks.
-- - [ ] `handleAdd()` : Melengkapi logika untuk mengambil inputan form, menghitung stok otomatis, dan menyimpan data baru ke *database*.
-- - [ ] `handleSave()` : Melengkapi logika untuk memperbarui (*update*) data item yang dipilih dan menghitung ulang stok terbarunya.
-- - [ ] `handleDelete()` : Melengkapi logika penghapusan data dari sistem beserta tampilan konfirmasinya.
+**2. `LoginController.java`**
+- [ ] `handleLogin()` : Mengambil input *username* dan *password*, lalu memvalidasinya menggunakan *database manager* sebelum masuk ke sistem.
+
+**3. `UmbrellaController.java`**
+- [ ] `initialize()` : Menghubungkan kolom tabel (`TableColumn`) dengan atribut model data, serta membuat *listener* agar data yang diklik pada tabel dapat muncul di *form* input teks.
+- [ ] `handleAdd()` : Melengkapi logika untuk mengambil inputan form, menghitung stok otomatis, dan menyimpan data baru ke *database*.
+- [ ] `handleSave()` : Melengkapi logika untuk memperbarui (*update*) data item yang dipilih dan menghitung ulang stok terbarunya.
+- [ ] `handleDelete()` : Melengkapi logika penghapusan data dari sistem beserta tampilan konfirmasinya.
 
 ### Komponen Penilaian (Total: 100 Poin)
 - **Fitur Login (15 Poin)**
