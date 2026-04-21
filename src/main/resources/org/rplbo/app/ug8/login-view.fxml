@@ -9,10 +9,6 @@
         <Insets top="40" right="40" bottom="40" left="40"/>
     </padding>
 
-    <ImageView fitWidth="100" preserveRatio="true">
-        <Image url="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Umbrella_Corporation_logo.svg/1024px-Umbrella_Corporation_logo.svg.png"/>
-    </ImageView>
-
     <Label text="UMBRELLA SECURE TERMINAL" />
 
     <VBox spacing="5" alignment="CENTER_LEFT" maxWidth="250">
